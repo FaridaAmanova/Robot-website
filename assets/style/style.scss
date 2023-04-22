@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_variable.scss";
-@import "_responsive.scss";
+@import '_mixin.scss';
+
 
 * {
     margin: 0;
@@ -95,38 +96,7 @@ header {
     width: 100%;
     height: 800px;
     color: $color_5;
-    .zen-content-box {
-        width: 60%;
-        h1 {
-            @include border-radius;
-            font-size: 25px;
-            color: $color_5;
-            background-color: $color_4;
-            border-radius: 7%;
-            -webkit-border-radius: 7%;
-            -moz-border-radius: 7%;
-            -ms-border-radius: 7%;
-            -o-border-radius: 7%;
-            margin: 20px;
-        }
-        p {
-            font-size: 38px;
-            font-weight: 600;
-            color: $color_5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    .zen-image-box {
-        width: 40%;
-        height: 10vh;
-        background-image: url('/assets/image/BG_ornaments-1.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        img {
-            height: 10vh;
-        }
-    }
 }
+
+
+@import "_responsive.scss";

@@ -82,17 +82,5 @@ header .head-button-box button:not(:hover) {
   padding: 20px;
   width: 100%;
   height: 800px;
-}
-.zen .zen-content-box {
-  width: 60%;
-}
-.zen .zen-image-box {
-  height: 30vh;
-  background-image: url("/assets/image/BG_ornaments-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.zen .zen-image-box img {
-  height: 30vh;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

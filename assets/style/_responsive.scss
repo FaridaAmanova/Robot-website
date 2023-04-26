@@ -1,0 +1,18 @@
+@media screen and (max-width:768px) {
+    .display-none-768 {
+        display: none !important;
+    }
+    header{
+        .display-block-icon{
+            display: block !important;
+        }
+    }
+    .zen {
+        .zen-image-box{
+            img {
+                height: inherit;
+                width: 100%;
+            }
+        }
+    }
+}

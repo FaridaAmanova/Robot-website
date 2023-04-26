@@ -1,3 +1,10 @@
 @mixin border-radius{
-    border-radius: 30px;
+    border-radius: 10px 0 0px 10px;
+}
+@mixin border-radius10px {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

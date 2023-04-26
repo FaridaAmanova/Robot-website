@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -23,7 +28,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
 }
 header .head-image-box img {
   width: 140px;
@@ -42,6 +46,16 @@ header nav ul li a {
   font-weight: lighter;
   color: #abb8c3;
   font-size: 20px;
+}
+header .display-block-icon {
+  display: none;
+}
+header .display-block-icon .responsive-open-menu-icon {
+  text-align: end;
+}
+header .display-block-icon .responsive-open-menu-icon i {
+  color: #fff;
+  font-size: 18px;
 }
 header .head-button-box button {
   background-color: #5207f3;
@@ -76,11 +90,188 @@ header .head-button-box button:not(:hover) {
 
 .zen {
   background-color: black;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.zen .zen-content-box {
+  height: 500px;
+}
+.zen .zen-content-box h1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
-  width: 100%;
-  height: 800px;
+  font-size: small;
+  background-color: #1a1717;
+  color: #5207f3;
+  width: 150px;
+  height: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.zen .zen-content-box h2 {
   color: #fff;
+  font-size: 50px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.zen .zen-content-box p {
+  color: #abb8c3;
+  padding: 15px 0;
+}
+.zen .zen-image-box {
+  position: relative;
+  background-image: url(/assets/image/BG_ornaments-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.zen .zen-image-box img {
+  height: 700px;
+}
+.zen .zen-image-box .zen-absolute-div-box {
+  display: flex;
+  position: absolute;
+  bottom: 150px;
+  font-size: 20px;
+  width: 450px;
+  height: 130px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.zen .zen-image-box .zen-absolute-div-box .absolute-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5207f3;
+  width: 30%;
+  border-radius: 10px 0 0px 10px;
+}
+.zen .zen-image-box .zen-absolute-div-box .absolute-icon-box i {
+  color: #fff;
+  font-size: 45px;
+}
+.zen .zen-image-box .zen-absolute-div-box .absolute-content-box {
+  padding: 30px 20px;
+  background-color: #1a1717;
+  width: 70%;
+}
+.zen .zen-image-box .zen-absolute-div-box .absolute-content-box h1 {
+  color: #fff;
+  font-size: 20px;
+}
+.zen .zen-image-box .zen-absolute-div-box .absolute-content-box h2 {
+  color: #5207f3;
+  font-size: 12px;
+}
+.zen .zen-button-box .zen-button-1 {
+  background-color: #5207f3;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  width: 290px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.zen .zen-button-box .zen-button-1:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+.zen .zen-button-box .zen-button-1:not(:hover) {
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+.zen .zen-button-box .zen-button-2 {
+  background-color: #1a1717;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  width: 290px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.zen .zen-button-box .zen-button-2:hover {
+  background-color: #abb8c3;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+.zen .zen-button-box .zen-button-2:not(:hover) {
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+.zen .zen-icon-box {
+  display: flex;
+  padding-top: 20px;
+}
+.zen .zen-icon-box i {
+  color: #eca306;
+  font-size: 17px;
+}
+.zen .zen-icon-box h3 {
+  padding-left: 15px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.page2 {
+  background-color: #1a1717;
+}
+.page2 .solutions {
+  color: #abb8c3;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.page3 {
+  background-image: url(/assets/image/backg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .display-none-768 {
+    display: none !important;
+  }
+  header .display-block-icon {
+    display: block !important;
+  }
+  .zen .zen-image-box img {
+    height: inherit;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

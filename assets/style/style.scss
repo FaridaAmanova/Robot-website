@@ -8,7 +8,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -105,7 +106,7 @@ header {
 }
 
 .zen {
-    background-color: $color_6;
+    background-color: $color_1;
     padding-top: 10%;
     padding-left: 5%;
 
@@ -168,6 +169,7 @@ header {
                 background-color: $color_3;
                 width: 30%;
                 @include border-radius;
+
                 i {
                     color: $color_5;
                     font-size: 45px;
@@ -281,24 +283,64 @@ header {
     }
 }
 
-.page2 {
-    background-color: $color_7;
-
-    .solutions {
-        color: $color_2;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
+.services {
+    display: flex;
+    position: absolute;
+    bottom: -350px;
+    font-size: 20px;
+    width: 100%;
+    height: 250px;
+    border-color: $color_11;
+    .services-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+        background-color: $color_11;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        h1 {
+            color: $color_5;
+            font-size: 20px;
+        }
+        p {
+            color: $color_10;
+            font-size: 15px;
+        }
+        i {
+            color: $color_3;
+        }
     }
-}
 
-.page3 {
-    background-image: url(/assets/image/backg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    .services-box-bg-purple {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+        background-color: $color_3;
+        border-radius: 5px    ;
+        -webkit-border-radius: 5px    ;
+        -moz-border-radius: 5px    ;
+        -ms-border-radius: 5px    ;
+        -o-border-radius: 5px    ;
+        h1{
+            color: $color_5;
+            font-size: 20px;
+        }
+        p {
+            color: $color_5;
+            font-size: 15px;
+        }
+        i {
+            color: $color_5;
+        }
+}
+}
+.empowering {
+    width: 100%;
 }
 
 @import "_responsive.scss";
